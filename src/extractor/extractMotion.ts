@@ -84,6 +84,32 @@ const easings = {
       x2: 0.4000000059604645,
       y2: 1.399999976158142
     }
+  },
+  BOUNCY: {
+    type: 'bouncy',
+    easingType: 'spring',
+    easing: {
+      mass: 1,
+      stiffness: 600,
+      damping: 15
+    }
+  },
+  GENTLE: {
+    type: 'gentle',
+    easingType: 'spring'
+  },
+  QUICK: {
+    type: 'quick',
+    easingType: 'spring'
+  },
+  SLOW: {
+    type: 'slow',
+    easingType: 'spring'
+  },
+  CUSTOM_SPRING: {
+    type: 'custom-spring',
+    easingType: 'spring'
+
   }
 }
 
@@ -139,6 +165,8 @@ const easing = (easing: Easing): easingPropertyInterface => {
 }
 
 const filterValidMotionTokens = (node: customTokenNode) => {
+  // @ts-ignore
+  console.log(node.name, node.reactions[0].action.transition)
   if (node.reactions.length > 0 && node.reactions[0].action?.type === 'NODE' && node.reactions[0].action.transition !== null && validEasingTypes.includes(node.reactions[0].action.transition.easing.type)) {
     return true
   }
