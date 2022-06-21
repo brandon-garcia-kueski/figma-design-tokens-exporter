@@ -1,56 +1,60 @@
 /* istanbul ignore file */
 export const tokenTypes = {
   color: {
-    label: 'Colors',
-    key: 'color'
+    label: "Colors",
+    key: "color",
   },
   gradient: {
-    label: 'Gradients',
-    key: 'gradient'
+    label: "Gradients",
+    key: "gradient",
   },
   font: {
-    label: 'Font Styles',
-    key: 'font'
+    label: "Font Styles",
+    key: "font",
   },
   typography: {
-    label: 'Typography',
-    key: 'typography',
-    exclude: ['original']
+    label: "Typography",
+    key: "typography",
+    exclude: ["original"],
   },
   effect: {
-    label: 'Effects',
-    key: 'effect'
+    label: "Effects",
+    key: "effect",
   },
   grid: {
-    label: 'Grids',
-    key: 'grid'
+    label: "Grids",
+    key: "grid",
   },
   border: {
-    label: 'Borders',
-    key: 'border'
+    label: "Borders",
+    key: "border",
   },
   breakpoint: {
-    label: 'Breakpoints',
-    key: 'breakpoint'
+    label: "Breakpoints",
+    key: "breakpoint",
   },
   radius: {
-    label: 'Radii',
-    key: 'radius'
+    label: "Radii",
+    key: "radius",
   },
   size: {
-    label: 'Sizes',
-    key: 'size'
+    label: "Sizes",
+    key: "size",
   },
   spacing: {
-    label: 'Spacing',
-    key: 'spacing'
+    label: "Spacing",
+    key: "spacing",
   },
   motion: {
-    label: 'Motion',
-    key: 'motion'
+    label: "Motion",
+    key: "motion",
   },
   opacity: {
-    label: 'Opacity',
-    key: 'opacity'
-  }
-}
+    label: "Opacity",
+    key: "opacity",
+  },
+  icon: {
+    label: "Icon",
+    key: "icon",
+  },
+};

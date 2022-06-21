@@ -1,14 +1,15 @@
 export type tokenCategoryType =
-  'color' |
-  'gradient' |
-  'font' |
-  'typography' |
-  'effect' |
-  'grid' |
-  'border' |
-  'breakpoint' |
-  'radius' |
-  'size' |
-  'spacing' |
-  'motion' |
-  'opacity'
+  | "color"
+  | "gradient"
+  | "font"
+  | "typography"
+  | "effect"
+  | "grid"
+  | "border"
+  | "breakpoint"
+  | "radius"
+  | "size"
+  | "spacing"
+  | "motion"
+  | "opacity"
+  | "icon";

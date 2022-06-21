@@ -1,11 +1,11 @@
 {
   "name": "design-tokens",
-  "version": "6.5.0",
+  "version": "1.0.0",
   "description": "Export design tokens from Figma",
   "main": "plugin.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukasoppermann/design-tokens.git"
+    "url": "https://github.com/brandon-garcia-kueski/figma-design-tokens-exporter.git"
   },
   "scripts": {
     "start": "npx webpack --mode=development --watch",
@@ -17,12 +17,10 @@
     "test:standardTokens": "node ./tests/integration/standard.build.js",
     "test:integration": "rm ./tests/integration/data/original.variables.css & rm ./tests/integration/data/standard.variables.css && npm run test:originalTokens & npm run test:standardTokens && jest tests/integration --coverage=false",
     "lint": "standardx src/**/*.ts src/*.ts | snazzy",
-    "examples": "rm -rf ./examples/build && node ./examples/build.js",
     "set-version": "replace-in-files --regex='\\d+\\.\\d+\\.\\d+' --replacement=$npm_package_version src/utilities/version.ts",
     "version": "npm run set-version && npm run build && git add --all"
   },
-  "author": "Lukas Oppermann <oppermann.lukas@gmail.com> (https://vea.re)",
-  "license": "MIT",
+  "author": "Brandon G. Neri <brandon.garcia@kueski.com>",
   "devDependencies": {
     "@ctrl/tinycolor": "^3.4.0",
     "@emotion/css": "^11.1.3",
